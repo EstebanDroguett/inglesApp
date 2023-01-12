@@ -1,14 +1,12 @@
 body {
-  margin: auto;
-}
-
-.backgroundImage {
-  background-image: url(../../assets/background-login-register.webp);
+  background-image: url(../../assets/background-login-register.JPG);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  opacity: .8;
+  opacity: 1;
+  margin: auto;
+  width: 100%;
 }
 
 #login{

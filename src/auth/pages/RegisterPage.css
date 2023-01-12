@@ -1,0 +1,20 @@
+body {
+    background-image: url(../../assets/background-login-register.JPG);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 1;
+    margin: auto;
+    width: 100%;
+  }
+  
+  #register{
+    opacity: .8;
+    /*width: 50%;*/
+  }
+  
+  #register:hover{
+    opacity: 1;
+  }
+  

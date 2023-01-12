@@ -1,6 +1,7 @@
 //import { useEffect } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';                 //1
-import { LoginPage } from '../auth';                                        //1
+import { LoginPage } from '../auth';    
+import { RegisterPage } from '../auth';                                    //1
 import { InglesPage } from '../ingles';                                 //1
 //import { useAuthStore } from '../hooks';
 //import { getEnvVariables } from '../helpers';
@@ -32,6 +33,7 @@ export const AppRouter = () => {
                     ? (
                         <>
                             <Route path="/auth/*" element={<LoginPage />} />
+                            <Route path="/auth/register" element={<RegisterPage />} />
                             <Route path="/*" element={<Navigate to="/auth/login" />} />
                         </>
                     )

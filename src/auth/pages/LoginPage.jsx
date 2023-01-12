@@ -1,6 +1,7 @@
 import React from 'react';
 import './LoginPage.css';
-import { Box, TextField, Button, Paper, Container, Grid, Typography } from '@mui/material';
+import { Link } from "react-router-dom";
+import { Box, TextField, Button, Paper, Container, Grid, Typography} from '@mui/material';
 
 export const LoginPage = () => {
   return (
@@ -42,6 +43,7 @@ export const LoginPage = () => {
                 >
                   Login
                 </Button>
+                <p>New to Ingles App? <Link to="/auth/register"> Create an account.</Link></p>
               </Box>
             </Paper>
           </Grid>
