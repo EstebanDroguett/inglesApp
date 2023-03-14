@@ -1,7 +1,9 @@
-import React from 'react'
+import { Navbar } from "../";
 
 export const InglesPage = () => {
   return (
-    <div>InglesPage</div>
+    <>
+      <Navbar />
+    </>
   )
 }

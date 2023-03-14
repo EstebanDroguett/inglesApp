@@ -1,0 +1,50 @@
+.backgroundImage {
+  background-image: url(../../assets/background-login-register.JPG);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 1;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box {
+  background-color: rgb(48, 56, 63);
+  border-color: rgb(255, 255, 255);
+  border-radius: 5%;
+  color: white;
+  max-width: 400px;
+  padding: 1rem;
+  height: 305px;
+  margin: 2px;
+}
+
+.box2{
+  background-color: rgb(48, 56, 63);
+  border-color: rgb(255, 255, 255);
+  border-radius: 5%;
+  color: white;
+  max-width: 400px;
+  padding: 1rem;
+  height: 520px;
+  margin: 2px;
+}
+
+.button {
+  margin: 1rem;
+}
+
+.autenticationPage{
+  opacity: .8;
+}
+
+.autenticationPage:hover{
+  transition: 0.7s;
+  opacity: 1;
+}

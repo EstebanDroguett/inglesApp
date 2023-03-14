@@ -1,54 +1,38 @@
 import React from 'react';
-import './LoginPage.css';
+import './AutenticationPage.css';
 import { Link } from "react-router-dom";
-import { Box, TextField, Button, Paper, Container, Grid, Typography} from '@mui/material';
+import { Button, Form, Container, Row, Col } from 'react-bootstrap';
 
 export const LoginPage = () => {
   return (
     <div className="backgroundImage">
-      <Container maxWidth="xl">
-        <Grid
-          container
-          direction="column"
-          alignItems="center"
-          justifyContent="center"
-          sx={{ minHeight: "100vh" }}
-        >
-          <Grid item id="login">
-            <Paper sx={{ padding: "1.2em", borderRadius: "0.5em" }}>
-              <Box component="form">
-                <Typography variant="h4" sx={{ mt: 3, mb: 2 }}>Ingles App</Typography>
-                <TextField
-                  id="outlined-required"
-                  label="Email"
-                  type="email"
-                  margin="normal"
-                  sx={{ mt: 2, mb: 2 }}
-                  fullWidth
-                  required
-                />
-                <TextField
-                  id="outlined-password-input"
-                  label="Password"
-                  type="password"
-                  margin="normal"
-                  sx={{ mt: 2, mb: 2 }}
-                  fullWidth
-                  required
-                />
-                <Button variant="contained"
-                  type="submit"
-                  sx={{ mt: 2, mb: 3 }}
-                  fullWidth
-                >
+      <Form className="box autenticationPage">
+        <Container>
+          <div>
+            <div className="row">
+              <Form.Group className="mb-6 text-center" controlId="formBasicEmail">
+                <Form.Label>Ingles App</Form.Label>
+              </Form.Group>
+              <Form.Group className="mb-6" controlId="formBasicEmail">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control type="email" placeholder="Email" required />
+              </Form.Group>
+              <Form.Group className="mb-6" controlId="formBasicPassword">
+                <Form.Label>Password</Form.Label>
+                <Form.Control type="password" placeholder="Password" />
+              </Form.Group>
+              <Form.Group className="text-center">
+                <Button className="button" variant="outline-primary" type="submit">
                   Login
                 </Button>
-                <p>New to Ingles App? <Link to="/auth/register"> Create an account.</Link></p>
-              </Box>
-            </Paper>
-          </Grid>
-        </Grid>
-      </Container >
+              </Form.Group>
+              <Form.Group className="text-center">
+                <Form.Label>New to Ingles App? <Link to="/auth/register"> Create an account.</Link></Form.Label>
+              </Form.Group>
+            </div>
+          </div>
+        </Container>
+      </Form >
     </div>
   )
 }
